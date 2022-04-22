@@ -1390,7 +1390,7 @@ input[type='checkbox'] {
 }
 
 .form .fa-stack .fa-stack-2x {
-	color: #5f4dee;
+	color:  linear-gradient(to right, rgb(242,101,34) 33.33%, rgb(236, 0, 140) 66.66%, rgb(38,36,123) 100%);
 	transition: all 0.2s ease;
 }
 
