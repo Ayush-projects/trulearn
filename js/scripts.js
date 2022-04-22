@@ -3,7 +3,12 @@
    Created: Sep 2019
    Description: Custom JS file
 */
+const isMobile = navigator.userAgentData.mobile;
 
+if(isMobile)
+{
+    document.getElementById("lol").style.display = "none";
+}
 
 (function($) {
     "use strict"; 

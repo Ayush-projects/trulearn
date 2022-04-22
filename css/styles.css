@@ -1665,12 +1665,9 @@ a:hover.back-to-top {
 		height: 5.5rem;
 	}
 	/* end of header */
-	@media screen and (max-width: 600px) {
-		#lol {
-		  visibility: hidden;
-		  display: none;
-		}
-	  }
+	@media only screen 
+	and (min-device-width : 320px) 
+	and (max-device-width : 480px) { #lol { display: none; }}
 
 	/* Testimonials */
 	.slider-2 .swiper-button-prev {
