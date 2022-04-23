@@ -1,0 +1,11 @@
+/* Demo purposes only */
+
+ #pricing {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0;
+    height: 100%;
+  }
