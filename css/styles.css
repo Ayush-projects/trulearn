@@ -1293,8 +1293,8 @@ input[type='checkbox'] {
 .slider-2 {
 	padding-top: 2.75rem;
 	padding-bottom: 4rem;
-	position: relative;
-	
+   position: relative;
+   
 }
 .swiper-slide {
 	display: inline-block;
@@ -1341,6 +1341,7 @@ input[type='checkbox'] {
 	/* even if you can't see it chrome you can see it on mobile device */
 	outline: none;
 }
+
 
 .slider-2 .swiper-button-prev {
 	left: -0.375rem;

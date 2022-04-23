@@ -13,7 +13,7 @@ window.mobileAndTabletCheck = function() {
 if(mobileAndTabletCheck())
 {
     document.getElementById("lol").style.display = "none";
-    document.getElementById("sliderr").style.top = "1000px"
+    document.getElementById("bottom").style.top = "95em"
 }
 
 (function($) {
