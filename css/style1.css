@@ -10,7 +10,7 @@
   margin: 50px 10px;
 }
 .snip1404 img {
-  position: absolute;
+  position: static;
   left: 0;
   top: 0;
   height: 100%;
@@ -19,7 +19,7 @@
 .snip1404 .plan {
   margin: 0;
   width: 25%;
-  position: relative;
+  position: static;
   float: left;
   overflow: hidden;
   border: 3px solid white;
@@ -50,14 +50,14 @@
 .snip1404 .plan-title {
     color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  position: relative;
+  position: static;
   margin: 0;
   padding: 20px 20px 0;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 .snip1404 .plan-title:after {
-  position: absolute;
+  position: static;
   content: '';
   top: 100%;
   left: 0;
