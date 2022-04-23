@@ -11,7 +11,7 @@ window.mobileAndTabletCheck = function() {
 
 
 if(mobileAndTabletCheck())
-{   
+{   alert('mobile device')
     document.getElementById("lol").style.display = "none";
     document.getElementById("bottom").style.top = "200em"
 }
