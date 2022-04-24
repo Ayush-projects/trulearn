@@ -13,8 +13,8 @@ window.mobileAndTabletCheck = function() {
 if(mobileAndTabletCheck())
 {  if( document.getElementById("lol"))
     document.getElementById("lol").style.display = "none";
-    if(document.getElementById("bottom"))
-    document.getElementById("bottom").style.top = "200em"
+    // if(document.getElementById("bottom"))
+    // document.getElementById("bottom").style.top = "200em"
     if(document.getElementById("image1"))
     document.getElementById("image1").style.display = "none";
    
