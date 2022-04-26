@@ -1,0 +1,994 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="TruLead">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>truLead</title>
+    
+    <!-- Styles -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link href="css/styles.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="assets/small.png">
+    <style>
+        body{
+        margin-top:20px;
+        background:#DCDCDC;
+    }
+    .content {
+        padding: 35px 0px;
+    }
+    
+    .post-list {
+        padding: 90px 0px;
+    }
+    
+    .post-detail {
+        padding: 40px 0px;
+        margin-top: 120px;
+    }
+    
+    .post {
+        width: 100%;
+        float: left;
+        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+        background: #fff;
+        margin-bottom: 40px;
+        border-radius: 3px;
+    }
+    
+    .feature-post .thumbnail .author-info {
+        padding: 20px 5px 20px 40px;
+        text-align: left;
+        min-height: 80px;
+        background: #2c3840;
+        float: left;
+        width: 100%;
+    }
+    
+    .post .post-type {
+        float: left;
+        width: 100%;
+    }
+    
+    .post iframe {
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .post .mejs-container {
+        border-radius: 3px 3px 0px 0px;
+        width: 100% !important;
+    }
+    
+    .post .post-video {
+        border-radius: 3px 3px 0px 0px;
+    }
+    
+    .post .post-video iframe {
+        width: 100%;
+    }
+    
+    .post .post-video video {
+        border-radius: 3px 3px 0px 0px;
+    }
+    
+    .post .post-multiple-img a img {
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+        height: auto;
+        display: block;
+        min-height: 160px;
+    }
+    
+    .post .post-multiple-img a {
+        float: left;
+        width: 100%;
+        display: block;
+    }
+    
+    .post .post-multiple-img a:hover img {
+        opacity: 0.7;
+    }
+    
+    .post .post-audio {
+        height: auto;
+    }
+    
+    .post .post-audio ._SMB-widget {
+        width: 100%;
+    }
+    
+    .post .post-quote blockquote {
+        text-align: center;
+        margin: 0px;
+        padding: 25px 15px;
+    }
+    
+    .post .post-quote blockquote h3 {
+        color: #e74c3c;
+        font-size: 36px;
+        margin: 0px 0px 10px 0px;
+    }
+    
+    .post .post-quote blockquote p {
+        color: #333;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    
+    .post .post-img a {
+        display: block;
+    }
+    
+    .post .post-img:hover a img {
+        opacity: 0.7;
+    }
+    
+    .post .post-img a img {
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        height: auto;
+        border-radius: 3px 3px 0px 0px;
+    }
+    
+    .post-detail .post .caption {
+        padding: 55px 45px 0px 45px;
+    }
+    
+    .post .caption {
+        float: left;
+        width: 100%;
+        text-align: left;
+        padding: 25px 25px;
+    }
+    
+    .post .caption h3 {
+        margin: 0px 0px 20px 0px;
+        color: #36a0e7;
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 42px;
+    }
+    
+    .post .caption p {
+        line-height: 28px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    .post .author-info {
+        padding: 15px 15px 15px 15px;
+        text-align: left;
+        min-height: 60px;
+        border-bottom: 1px solid #ddd;
+        background: #fcfcfc;
+        float: left;
+        width: 100%;
+    }
+    
+    .post .author-info .list-inline {
+        margin: 0px;
+    }
+    
+    .post .author-info ul li:first-child {
+        border-left: none;
+        padding-left: 0px;
+    }
+    
+    .post .author-info ul li {
+        float: left;
+        border-left: 1px solid #ddd;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .post .author-info ul li p {
+        line-height: 16px;
+        color: #3b4952;
+        font-weight: 300;
+        font-size: 14px;
+        margin: 0px;
+    }
+    
+    .post .author-info ul li strong {
+        color: #3b4952;
+    }
+    
+    .post .author-info ul li a {
+        color: #3b4952;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .post .author-info ul li a:hover {
+        color: #e74c3c;
+        text-decoration: none;
+    }
+    
+    .post .author-info ul li .icon-box {
+        margin-right: 15px;
+        width: 36px;
+        text-align: center;
+        line-height: 36px;
+        font-size: 30px;
+        height: 36px;
+        float: left;
+        background: transparent;
+        color: #aebbc5;
+    }
+    
+    .post .author-info ul li .icon-box img {
+        border-radius: 3px;
+        width: 100%;
+    }
+    
+    .post .author-info ul li .info {
+        float: left;
+    }
+    
+    .post .author-info.author-info-2 ul li:first-child {
+        border-left: none;
+        padding-left: 0px;
+    }
+    
+    .post .author-info.author-info-2 ul li .icon-box {
+        font-size: 28px;
+    }
+    
+    .post .post-category {
+        float: left;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    
+    .post .post-category a {
+        margin: 0px;
+        font-size: 18px;
+        font-weight: 300;
+        color: #3b4952;
+    }
+    
+    .post .post-category span {
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        background: #3b4952;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    
+    .post .post-category a:hover span {
+        background: #e74c3c;
+        color: #e74c3c;
+    }
+    
+    .post .post-category a:hover {
+        color: #e74c3c;
+    }
+    
+    .post .tags {
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .post .tags li {
+        margin-bottom: 8px;
+        padding: 0px 2px;
+    }
+    
+    .post .tags li a {
+        background: #ebf1f4;
+        font-size: 14px;
+        font-weight: 300;
+        border-radius: 3px;
+        padding: 4px 8px;
+        color: #3b4952;
+    }
+    
+    .post .tags li a:hover {
+        background: #3b4952;
+        color: #fff;
+    }
+    
+    .img-grid {
+        float: left;
+        margin-bottom: 40px;
+    }
+    
+    .img-grid li {
+        margin: 0px;
+        float: left;
+    }
+    
+    .post .caption h5 {
+        text-decoration: underline;
+        margin: 0px 0px 20px 0px;
+        color: #3b4952;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .post .list-unstyled {
+        margin-bottom: 40px;
+    }
+    
+    .post .list-unstyled li {
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 500;
+        color: #49545b;
+    }
+    
+    .post .list-unstyled li i {
+        color: #a0b9ca;
+        margin-right: 15px;
+    }
+    
+    blockquote {
+        background: #f2f6f8;
+        border: 1px solid #e5e5e5;
+        line-height: 28px;
+        margin-bottom: 40px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #49545b;
+    }
+    
+    .line-block {
+        padding: 20px 45px;
+        border-top: 1px solid #eef3f6;
+        border-bottom: 1px solid #eef3f6;
+        float: left;
+        width: 100%;
+    }
+    
+    .post .line-block .tags {
+        margin-bottom: 0px;
+    }
+    
+    .share-this {
+        padding: 20px 45px;
+        border-bottom: 1px solid #eef3f6;
+        float: left;
+        width: 100%;
+    }
+    
+    .share-this p,
+    .share-this ul {
+        margin-bottom: 0px;
+    }
+    
+    .share-this li a {
+        background: #2c3840;
+        line-height: 34px;
+        text-align: center;
+        color: #fff;
+        width: 32px;
+        height: 32px;
+        display: block;
+        border-radius: 50%;
+    }
+    
+    .share-this li a.pinterest {
+        background: #d91c1c;
+    }
+    
+    .share-this li a.google-plus {
+        background: #f25353;
+    }
+    
+    .share-this li a.facebook {
+        background: #2b77be;
+    }
+    
+    .share-this li a.twitter {
+        background: #62bfef;
+    }
+    
+    .related-post {
+        padding: 40px 45px;
+        border-bottom: 1px solid #eef3f6;
+        float: left;
+        width: 100%;
+    }
+    
+    .related-post .thumbnail {
+        padding: 0px;
+        border: none;
+    }
+    
+    .related-post .thumbnail .caption {
+        padding: 30px 0px 0px 0px;
+    }
+    
+    .related-post .thumbnail .caption a {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #49545b;
+    }
+    
+    .related-post .thumbnail .caption a:hover {
+        color: #36a0e7;
+    }
+    
+    .related-post .thumbnail:hover a img {
+        opacity: 0.7;
+    }
+    
+    .related-post h4 {
+        color: #49545b;
+        font-weight: 700;
+        font-size: 18px;
+        margin: 0px 0px 20px 0px;
+    }
+    
+    .comment-count {
+        padding: 45px 45px;
+        border-bottom: 1px solid #eef3f6;
+        float: left;
+        width: 100%;
+    }
+    
+    .comment-count h4 {
+        font-weight: 500;
+        font-size: 24px;
+        color: #3b4952;
+    }
+    
+    .comment-count p {
+        margin-bottom: 0px;
+    }
+    
+    .comment-list {
+        float: left;
+        width: 100%;
+    }
+    
+    .comment-list .media:first-child {
+        margin-top: 0px;
+        border-bottom: 1px solid #eef3f6;
+    }
+    
+    .comment-list .media {
+        padding: 30px 45px;
+        margin-top: 0px;
+    }
+    
+    .comment-list .media .media-body .media {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: -80px;
+        border-left: 1px solid #eef3f6;
+        border-bottom: 1px solid #eef3f6;
+    }
+    
+    .comment-list .media .media-body {
+        position: relative;
+    }
+    
+    .comment-list .media .media-left {
+        padding-right: 20px;
+    }
+    
+    .comment-list .media .nested-first {
+        margin-top: 30px;
+        border-top: 1px solid #eef3f6;
+    }
+    
+    .comment-list .media .nested-first:before {
+        position: absolute;
+        left: -80px;
+        top: 90px;
+        content: '';
+        width: 1px;
+        background: #eef3f6;
+        height: 170px;
+    }
+    
+    .comment-list .media,
+    .comment-list .media-body {
+        overflow: visible;
+        zoom: 1;
+    }
+    
+    .comment-list .media .media-body ul {
+        margin-bottom: 0px;
+    }
+    
+    .comment-list .media .media-body ul li a {
+        color: #919ea8;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .comment-list .media .media-body ul li a:hover {
+        color: #36a0e7;
+    }
+    
+    .comment-list .media .media-body ul li a.reply-btn {
+        color: #49545b;
+        text-decoration: underline;
+    }
+    
+    .comment-list .media .media-body ul li a.reply-btn:hover {
+        color: #36a0e7;
+    }
+    
+    .comment-list .media .media-body ul li {
+        font-size: 18px;
+        padding-right: 15px;
+        color: #919ea8;
+        font-weight: 500;
+    }
+    
+    .comment-form {
+        float: left;
+        width: 100%;
+        padding: 30px 45px;
+    }
+    
+    .comment-form h4 {
+        font-weight: 300;
+        font-size: 28px;
+        color: #3b4952;
+        margin-bottom: 40px;
+    }
+    
+    .comment-form .form-control {
+        border-radius: 0px;
+        background: #f1f4f6;
+        border: none;
+        height: 50px;
+        color: #4a555c;
+        font-size: 16px;
+    }
+    
+    .comment-form .form-control::-webkit-input-placeholder {
+        color: #4a555c;
+    }
+    
+    .comment-form .form-control:-moz-placeholder {
+        color: #4a555c;
+    }
+    
+    .comment-form .form-control::-moz-placeholder {
+        color: #4a555c;
+    }
+    
+    .comment-form .form-control:-ms-input-placeholder {
+        color: #4a555c;
+    }
+    
+    .comment-form textarea.form-control {
+        height: auto;
+        min-height: 200px;
+        resize: none;
+    }
+    
+    .comment-form form {
+        margin-bottom: 40px;
+    }
+    
+    .vt-post.post .author-info ul li {
+        padding-left: 15px;
+        padding-right: 15px;
+        float: none;
+    }
+    
+    .vt-post.post .author-info {
+        border-radius: 0px 0px 0px 3px;
+        border-bottom: none;
+        border-right: 1px solid #ddd;
+        padding: 15px 12px 15px 12px;
+    }
+    
+    .vt-post.post .post-img a img {
+        border-radius: 3px 0px 0px 0px;
+    }
+    
+    .vt-post.post .caption {
+        padding: 25px 0px;
+    }
+    
+    .post .caption h3 {
+        margin: 0px 0px 20px 0px;
+        color: #36a0e7;
+        font-weight: 300;
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .md-heading {
+        font-size: 24px !important;
+        line-height: 36px !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .pagination>.active>a,
+    .pagination>.active>a:focus,
+    .pagination>.active>a:hover,
+    .pagination>.active>span,
+    .pagination>.active>span:focus,
+    .pagination>.active>span:hover {
+        background-color: #3b4952;
+        border-color: #3b4952;
+    }
+    
+    .pagination>li>a,
+    .pagination>li>span {
+        color: #2c3840;
+        margin: 0px 5px;
+        border-radius: 3px;
+        -webkit-box-shadow: 0px 1px 3px 0px rgba(44, 56, 64, 0.2);
+        -moz-box-shadow: 0px 1px 3px 0px rgba(44, 56, 64, 0.2);
+        box-shadow: 0px 1px 3px 0px rgba(44, 56, 64, 0.2);
+        border: none;
+        font-size: 16px;
+    }
+    
+    .pagination>li>a:focus,
+    .pagination>li>a:hover,
+    .pagination>li>span:focus,
+    .pagination>li>span:hover {
+        background-color: #e74c3c;
+        border-color: #e74c3c;
+        color: #fff;
+    }
+    
+    .pagination-wrap {
+        width: 100%;
+        float: left;
+        margin-bottom: 35px;
+    }
+    
+    .pagination {
+        margin: 0px;
+    }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".fixed-top" >
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom  fixed-top top-nav-collapse">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html" ><img src="assets/fav.png" alt="alternative"></a> 
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                 
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/" style="color: black;">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- Dropdown Menu -->          
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll" href="/learning-features.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">TruLead for Learning</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/learning-features.html"><span class="item-text">Features</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="/learning-details.html"><span class="item-text">Details</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="/learning-pricing.html"><span class="item-text">Pricing</span></a>
+                        </div>
+                    </li>
+                    <!-- end of dropdown menu -->
+                   <!-- Dropdown Menu -->          
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="/talent-feature.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color: black;">TruLead for Talent</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/talent-feature.html"><span class="item-text">Features</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="/talent-details.html"><span class="item-text">Details</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="/talent-pricing.html"><span class="item-text">Pricing</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/resource.html"  style="color: black;">Resources <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/testimonial.html"  style="color: black;">Testimonials <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/about.html"  style="color: black;">About Us <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/team.html"  style="color: black;">Our Team <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/contact.html"  style="color: black;">Contact Us <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/faq.html"  style="color: black;">FAQ's <span class="sr-only"></span></a>
+                    </li>
+                         
+                    <!-- <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#details">DETAILS</a>
+                    </li>
+                    
+
+                  
+
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#pricing">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="/about.html">ABOUT US</a>
+                    </li> -->
+                    <span class="nav-item">
+                        <a class="btn-outline-sm nav-link" href="/schedule.html" style="background: linear-gradient(to right, rgb(242,101,34) 33.33%, rgb(236, 0, 140) 66.66%, rgb(38,36,123) 100%); color: white; padding-top: 8px; padding: 1em;">Schedule a Demo</a>
+                    </span>
+                </ul>
+               
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+  
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+    <div class="container" style="margin-top: 20px;">
+        <div class="col-md-12 col-lg-12">
+            <article class="post vt-post">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
+                        <div class="post-type post-img">
+                            <a href="#"><img src="https://www.thedailydesigns.com/wp-content/uploads/2018/12/animated-video.png" class="img-responsive" alt="image post"></a>
+                        </div>
+                        <div class="author-info author-info-2">
+                            <ul class="list-inline">
+                                <li>
+                                    <div class="info">
+                                        <p>Posted on:</p>
+                                        <strong>Dec 21, 2021</strong></div>
+                                </li>
+                                <li>
+                                    <div class="info">
+                                        <p>Comments:</p>
+                                        <strong></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
+                        <div class="caption">
+                            <h3 class="md-heading"><a href="#">ACCEPTING…</a></h3>
+                            <p style="padding: 5px;">
+                                I was waiting for my delivery from an online grocer. But alas! Few of my fav items were
+missing! I was very angry.
+I vent my anger on the unsuspecting delivery boy.
+The watchman tried to help me with my bags. In my foul mood I hurled a few nasty
+comments at him, recalling an unrelated past incident.
+Sat quietly with a foul mood and unwilling for my office e-meetings. When I did join in I was
+a passive participant. Had plans to watch Big B’s new movie. Put that off too.
+1 by 1, unbeknownst to me, I was piling on micro-anxieties. Some outside my control. Others
+my own. The day was bad. I couldn’t even sleep over it.
+I started cursing life for handing me a raw deal. The lockdown. The economy. The pandemic.
+The universe was pushing me down a rabbit hole.
+Frustrated I turned on some music. Those zestful Kishorda numbers started playing. I wafted
+into a zone of peace.
+We slip into zones of anxieties. Mostly triggered by things outside our control.
+Micro-anxieties pile up one over other & form a chain. We all have different ways to break
+this chain. Some talk to friends. Others indulge in family activity
+
+Breaking this chain is vital. Earlier the better. Accepting the uncontrollable is perhaps a
+starting point.
+What say, some Kishorda melodies?
+(All views expressed here are the views of the essayist and does not represent the
+official standpoints of any organisation the essayist is associated with)
+                            </p>
+                            <!-- <a class="btn btn-default" href="#" role="button">Read More</a> </div> -->
+                    </div>
+                </div>
+            </article>
+            
+            
+            
+           
+            <div class="pagination-wrap">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <!-- Newsletter -->
+   
+    <!-- Footer -->
+    <svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        viewBox="0 0 1920 79" class="wave">
+        <defs>
+
+            <linearGradient id="MyGradient">
+                <stop offset="33.33%" stop-color="rgb(242,101,34)" />
+                <stop offset="66.66%" stop-color="rgb(236, 0, 140)" />
+                <stop offset="100%" stop-color="rgb(38,36,123)" />
+                
+              </linearGradient>
+          
+        </defs>
+        <title>footer-frame</title>
+        <path class="wave"
+            d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+            transform="translate(0 -0.188)" />
+    </svg>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col first">
+                        <h4>About TruLead for Learning</h4>
+                        <p class="p-small">
+                            Trulead suite for Learning is an IOB powered SaaS platform for improving Learning Effectiveness at individual level across the organization</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                           
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a class="white" href="/testimonial.html" style="text-decoration: none;">Testimonials  </a></div>
+                            </li>
+                          
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a class="white" href="/contact.html" style="text-decoration: none;">Contact Us  </a></div>
+                            </li>
+                          
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">Corporate Office:<br>
+
+                                    C118, First Floor, Eastern Business District
+                                    
+                                    LBS Marg, Bhandup West Mumbai-400 079
+                                    Maharashtra, India<br>
+                                    +91-7411002720 | +91-9811320860</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a class="white" href="#" style="text-decoration: none;">enquire@espl.io</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2022 <a href="#">TruLead</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    </div>
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
