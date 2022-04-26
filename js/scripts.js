@@ -7,9 +7,9 @@
 let flag = true;
 setInterval(()=>{
     if(document.getElementById("k1"))
-    if(document.getElementById("k1").innerHTML == "truLearn")
+    if(document.getElementById("k1").innerHTML == "truLead for Learning")
     {
-        document.getElementById("k1").innerHTML = "truTalent"
+        document.getElementById("k1").innerHTML = "truLead for Talent"
         document.getElementById("k2").innerHTML = "Is your one stop solution for all your Talent Management needs <br> <br>"
         document.getElementById("lol").innerHTML = "35% ↑ Talent Decision Making Speed"
         document.getElementById("k3").src = "assets/box4.png"
@@ -18,7 +18,7 @@ setInterval(()=>{
     }
     else
     {
-        document.getElementById("k1").innerHTML = "truLearn"
+        document.getElementById("k1").innerHTML = "truLead for Learning"
         document.getElementById("k2").innerHTML = "Is your one stop solution for achieving Learning Effectiveness and real ROI on all your learning interventions"
         document.getElementById("lol").innerHTML = "27% ↑ Learning Effectiveness"
         document.getElementById("k3").src = "assets/image1.png"
