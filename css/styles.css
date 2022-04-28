@@ -785,6 +785,9 @@ input[type='checkbox'] {
 	/* background-color: #5f4dee; */
 	background-image: linear-gradient(to right, rgb(242,101,34) 33.33%, rgb(236, 0, 140) 66.66%, rgb(38,36,123) 100%);
 }
+.nav-container nav ul {
+    white-space:nowrap;
+}
 
 .wave {
 	
