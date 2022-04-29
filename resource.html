@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- SEO Meta Tags -->
-    <meta name="description" content="TruLead">
+    <meta name="description" content="trulead">
     <meta name="author" content="Inovatik">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
@@ -18,7 +18,7 @@
 	<meta property="og:type" content="article" />
 
     <!-- Website Title -->
-    <title>truLead</title>
+    <title>trulead</title>
     
     <!-- Styles -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -32,659 +32,10 @@
    
     <link rel="stylesheet" href="css/style1.css">
     <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style4.css">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="assets/small.png">
-    <style>
-        body{
-        margin-top:20px;
-        background:#DCDCDC;
-    }
-    .content {
-        padding: 35px 0px;
-    }
-    
-    .post-list {
-        padding: 90px 0px;
-    }
-    
-    .post-detail {
-        padding: 40px 0px;
-        margin-top: 120px;
-    }
-    
-    .post {
-        width: 100%;
-        float: left;
-        -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
-        background: #fff;
-        margin-bottom: 40px;
-        border-radius: 3px;
-    }
-    
-    .feature-post .thumbnail .author-info {
-        padding: 20px 5px 20px 40px;
-        text-align: left;
-        min-height: 80px;
-        background: #2c3840;
-        float: left;
-        width: 100%;
-    }
-    
-    .post .post-type {
-        float: left;
-        width: 100%;
-    }
-    
-    .post iframe {
-        padding: 0px;
-        margin: 0px;
-    }
-    
-    .post .mejs-container {
-        border-radius: 3px 3px 0px 0px;
-        width: 100% !important;
-    }
-    
-    .post .post-video {
-        border-radius: 3px 3px 0px 0px;
-    }
-    
-    .post .post-video iframe {
-        width: 100%;
-    }
-    
-    .post .post-video video {
-        border-radius: 3px 3px 0px 0px;
-    }
-    
-    .post .post-multiple-img a img {
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
-        width: 100%;
-        height: auto;
-        display: block;
-        min-height: 160px;
-    }
-    
-    .post .post-multiple-img a {
-        float: left;
-        width: 100%;
-        display: block;
-    }
-    
-    .post .post-multiple-img a:hover img {
-        opacity: 0.7;
-    }
-    
-    .post .post-audio {
-        height: auto;
-    }
-    
-    .post .post-audio ._SMB-widget {
-        width: 100%;
-    }
-    
-    .post .post-quote blockquote {
-        text-align: center;
-        margin: 0px;
-        padding: 25px 15px;
-    }
-    
-    .post .post-quote blockquote h3 {
-        color: #e74c3c;
-        font-size: 36px;
-        margin: 0px 0px 10px 0px;
-    }
-    
-    .post .post-quote blockquote p {
-        color: #333;
-        font-size: 24px;
-        font-weight: 300;
-    }
-    
-    .post .post-img a {
-        display: block;
-    }
-    
-    .post .post-img:hover a img {
-        opacity: 0.7;
-    }
-    
-    .post .post-img a img {
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
-        transition: all 0.5s ease-in-out;
-        width: 100%;
-        height: auto;
-        border-radius: 3px 3px 0px 0px;
-    }
-    
-    .post-detail .post .caption {
-        padding: 55px 45px 0px 45px;
-    }
-    
-    .post .caption {
-        float: left;
-        width: 100%;
-        text-align: left;
-        padding: 25px 25px;
-    }
-    
-    .post .caption h3 {
-        margin: 0px 0px 20px 0px;
-        color: #36a0e7;
-        font-weight: 300;
-        font-size: 34px;
-        line-height: 42px;
-    }
-    
-    .post .caption p {
-        line-height: 28px;
-        margin-bottom: 20px;
-        font-size: 16px;
-    }
-    
-    .post .author-info {
-        padding: 15px 15px 15px 15px;
-        text-align: left;
-        min-height: 60px;
-        border-bottom: 1px solid #ddd;
-        background: #fcfcfc;
-        float: left;
-        width: 100%;
-    }
-    
-    .post .author-info .list-inline {
-        margin: 0px;
-    }
-    
-    .post .author-info ul li:first-child {
-        border-left: none;
-        padding-left: 0px;
-    }
-    
-    .post .author-info ul li {
-        float: left;
-        border-left: 1px solid #ddd;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    .post .author-info ul li p {
-        line-height: 16px;
-        color: #3b4952;
-        font-weight: 300;
-        font-size: 14px;
-        margin: 0px;
-    }
-    
-    .post .author-info ul li strong {
-        color: #3b4952;
-    }
-    
-    .post .author-info ul li a {
-        color: #3b4952;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-    }
-    
-    .post .author-info ul li a:hover {
-        color: #e74c3c;
-        text-decoration: none;
-    }
-    
-    .post .author-info ul li .icon-box {
-        margin-right: 15px;
-        width: 36px;
-        text-align: center;
-        line-height: 36px;
-        font-size: 30px;
-        height: 36px;
-        float: left;
-        background: transparent;
-        color: #aebbc5;
-    }
-    
-    .post .author-info ul li .icon-box img {
-        border-radius: 3px;
-        width: 100%;
-    }
-    
-    .post .author-info ul li .info {
-        float: left;
-    }
-    
-    .post .author-info.author-info-2 ul li:first-child {
-        border-left: none;
-        padding-left: 0px;
-    }
-    
-    .post .author-info.author-info-2 ul li .icon-box {
-        font-size: 28px;
-    }
-    
-    .post .post-category {
-        float: left;
-        width: 100%;
-        text-align: left;
-        margin-bottom: 20px;
-    }
-    
-    .post .post-category a {
-        margin: 0px;
-        font-size: 18px;
-        font-weight: 300;
-        color: #3b4952;
-    }
-    
-    .post .post-category span {
-        width: 12px;
-        height: 12px;
-        display: inline-block;
-        background: #3b4952;
-        vertical-align: middle;
-        margin-right: 10px;
-    }
-    
-    .post .post-category a:hover span {
-        background: #e74c3c;
-        color: #e74c3c;
-    }
-    
-    .post .post-category a:hover {
-        color: #e74c3c;
-    }
-    
-    .post .tags {
-        float: left;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .post .tags li {
-        margin-bottom: 8px;
-        padding: 0px 2px;
-    }
-    
-    .post .tags li a {
-        background: #ebf1f4;
-        font-size: 14px;
-        font-weight: 300;
-        border-radius: 3px;
-        padding: 4px 8px;
-        color: #3b4952;
-    }
-    
-    .post .tags li a:hover {
-        background: #3b4952;
-        color: #fff;
-    }
-    
-    .img-grid {
-        float: left;
-        margin-bottom: 40px;
-    }
-    
-    .img-grid li {
-        margin: 0px;
-        float: left;
-    }
-    
-    .post .caption h5 {
-        text-decoration: underline;
-        margin: 0px 0px 20px 0px;
-        color: #3b4952;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 30px;
-    }
-    
-    .post .list-unstyled {
-        margin-bottom: 40px;
-    }
-    
-    .post .list-unstyled li {
-        font-size: 16px;
-        line-height: 28px;
-        font-weight: 500;
-        color: #49545b;
-    }
-    
-    .post .list-unstyled li i {
-        color: #a0b9ca;
-        margin-right: 15px;
-    }
-    
-    blockquote {
-        background: #f2f6f8;
-        border: 1px solid #e5e5e5;
-        line-height: 28px;
-        margin-bottom: 40px;
-        font-size: 16px;
-        font-weight: 500;
-        color: #49545b;
-    }
-    
-    .line-block {
-        padding: 20px 45px;
-        border-top: 1px solid #eef3f6;
-        border-bottom: 1px solid #eef3f6;
-        float: left;
-        width: 100%;
-    }
-    
-    .post .line-block .tags {
-        margin-bottom: 0px;
-    }
-    
-    .share-this {
-        padding: 20px 45px;
-        border-bottom: 1px solid #eef3f6;
-        float: left;
-        width: 100%;
-    }
-    
-    .share-this p,
-    .share-this ul {
-        margin-bottom: 0px;
-    }
-    
-    .share-this li a {
-        background: #2c3840;
-        line-height: 34px;
-        text-align: center;
-        color: #fff;
-        width: 32px;
-        height: 32px;
-        display: block;
-        border-radius: 50%;
-    }
-    
-    .share-this li a.pinterest {
-        background: #d91c1c;
-    }
-    
-    .share-this li a.google-plus {
-        background: #f25353;
-    }
-    
-    .share-this li a.facebook {
-        background: #2b77be;
-    }
-    
-    .share-this li a.twitter {
-        background: #62bfef;
-    }
-    
-    .related-post {
-        padding: 40px 45px;
-        border-bottom: 1px solid #eef3f6;
-        float: left;
-        width: 100%;
-    }
-    
-    .related-post .thumbnail {
-        padding: 0px;
-        border: none;
-    }
-    
-    .related-post .thumbnail .caption {
-        padding: 30px 0px 0px 0px;
-    }
-    
-    .related-post .thumbnail .caption a {
-        font-size: 18px;
-        line-height: 28px;
-        font-weight: 300;
-        color: #49545b;
-    }
-    
-    .related-post .thumbnail .caption a:hover {
-        color: #36a0e7;
-    }
-    
-    .related-post .thumbnail:hover a img {
-        opacity: 0.7;
-    }
-    
-    .related-post h4 {
-        color: #49545b;
-        font-weight: 700;
-        font-size: 18px;
-        margin: 0px 0px 20px 0px;
-    }
-    
-    .comment-count {
-        padding: 45px 45px;
-        border-bottom: 1px solid #eef3f6;
-        float: left;
-        width: 100%;
-    }
-    
-    .comment-count h4 {
-        font-weight: 500;
-        font-size: 24px;
-        color: #3b4952;
-    }
-    
-    .comment-count p {
-        margin-bottom: 0px;
-    }
-    
-    .comment-list {
-        float: left;
-        width: 100%;
-    }
-    
-    .comment-list .media:first-child {
-        margin-top: 0px;
-        border-bottom: 1px solid #eef3f6;
-    }
-    
-    .comment-list .media {
-        padding: 30px 45px;
-        margin-top: 0px;
-    }
-    
-    .comment-list .media .media-body .media {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-left: -80px;
-        border-left: 1px solid #eef3f6;
-        border-bottom: 1px solid #eef3f6;
-    }
-    
-    .comment-list .media .media-body {
-        position: relative;
-    }
-    
-    .comment-list .media .media-left {
-        padding-right: 20px;
-    }
-    
-    .comment-list .media .nested-first {
-        margin-top: 30px;
-        border-top: 1px solid #eef3f6;
-    }
-    
-    .comment-list .media .nested-first:before {
-        position: absolute;
-        left: -80px;
-        top: 90px;
-        content: '';
-        width: 1px;
-        background: #eef3f6;
-        height: 170px;
-    }
-    
-    .comment-list .media,
-    .comment-list .media-body {
-        overflow: visible;
-        zoom: 1;
-    }
-    
-    .comment-list .media .media-body ul {
-        margin-bottom: 0px;
-    }
-    
-    .comment-list .media .media-body ul li a {
-        color: #919ea8;
-        font-size: 18px;
-        font-weight: 500;
-    }
-    
-    .comment-list .media .media-body ul li a:hover {
-        color: #36a0e7;
-    }
-    
-    .comment-list .media .media-body ul li a.reply-btn {
-        color: #49545b;
-        text-decoration: underline;
-    }
-    
-    .comment-list .media .media-body ul li a.reply-btn:hover {
-        color: #36a0e7;
-    }
-    
-    .comment-list .media .media-body ul li {
-        font-size: 18px;
-        padding-right: 15px;
-        color: #919ea8;
-        font-weight: 500;
-    }
-    
-    .comment-form {
-        float: left;
-        width: 100%;
-        padding: 30px 45px;
-    }
-    
-    .comment-form h4 {
-        font-weight: 300;
-        font-size: 28px;
-        color: #3b4952;
-        margin-bottom: 40px;
-    }
-    
-    .comment-form .form-control {
-        border-radius: 0px;
-        background: #f1f4f6;
-        border: none;
-        height: 50px;
-        color: #4a555c;
-        font-size: 16px;
-    }
-    
-    .comment-form .form-control::-webkit-input-placeholder {
-        color: #4a555c;
-    }
-    
-    .comment-form .form-control:-moz-placeholder {
-        color: #4a555c;
-    }
-    
-    .comment-form .form-control::-moz-placeholder {
-        color: #4a555c;
-    }
-    
-    .comment-form .form-control:-ms-input-placeholder {
-        color: #4a555c;
-    }
-    
-    .comment-form textarea.form-control {
-        height: auto;
-        min-height: 200px;
-        resize: none;
-    }
-    
-    .comment-form form {
-        margin-bottom: 40px;
-    }
-    
-    .vt-post.post .author-info ul li {
-        padding-left: 15px;
-        padding-right: 15px;
-        float: none;
-    }
-    
-    .vt-post.post .author-info {
-        border-radius: 0px 0px 0px 3px;
-        border-bottom: none;
-        border-right: 1px solid #ddd;
-        padding: 15px 12px 15px 12px;
-    }
-    
-    .vt-post.post .post-img a img {
-        border-radius: 3px 0px 0px 0px;
-    }
-    
-    .vt-post.post .caption {
-        padding: 25px 0px;
-    }
-    
-    .post .caption h3 {
-        margin: 0px 0px 20px 0px;
-        color: #36a0e7;
-        font-weight: 300;
-        font-size: 34px;
-        line-height: 42px;
-    }
-    .md-heading {
-        font-size: 24px !important;
-        line-height: 36px !important;
-        margin-bottom: 15px !important;
-    }
-    
-    .pagination>.active>a,
-    .pagination>.active>a:focus,
-    .pagination>.active>a:hover,
-    .pagination>.active>span,
-    .pagination>.active>span:focus,
-    .pagination>.active>span:hover {
-        background-color: #3b4952;
-        border-color: #3b4952;
-    }
-    
-    .pagination>li>a,
-    .pagination>li>span {
-        color: #2c3840;
-        margin: 0px 5px;
-        border-radius: 3px;
-        -webkit-box-shadow: 0px 1px 3px 0px rgba(44, 56, 64, 0.2);
-        -moz-box-shadow: 0px 1px 3px 0px rgba(44, 56, 64, 0.2);
-        box-shadow: 0px 1px 3px 0px rgba(44, 56, 64, 0.2);
-        border: none;
-        font-size: 16px;
-    }
-    
-    .pagination>li>a:focus,
-    .pagination>li>a:hover,
-    .pagination>li>span:focus,
-    .pagination>li>span:hover {
-        background-color: #e74c3c;
-        border-color: #e74c3c;
-        color: #fff;
-    }
-    
-    .pagination-wrap {
-        width: 100%;
-        float: left;
-        margin-bottom: 35px;
-    }
-    
-    .pagination {
-        margin: 0px;
-    }
-    </style>
 </head>
 <body data-spy="scroll" data-target=".fixed-top" >
     
@@ -698,8 +49,10 @@
     </div>
     <!-- end of preloader -->
     
- <!-- Navigation -->
- <nav class="navbar navbar-expand-lg navbar-dark navbar-custom  fixed-top top-nav-collapse">
+
+
+   <!-- Navigation -->
+   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom  fixed-top top-nav-collapse">
     <div class="container">
 
         <!-- Text Logo - Use this if you don't have a graphic logo -->
@@ -723,7 +76,7 @@
                 </li>
                 <!-- Dropdown Menu -->          
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="/learning.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: black; white-space: nowrap;">TruLead for Learning</a>
+                    <a class="nav-link dropdown-toggle page-scroll" href="/learning.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: black; white-space: nowrap;">trulead for Learning</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/learning.html" style="white-space: nowrap;"><span class="item-text">Features</span></a>
                         <div class="dropdown-items-divide-hr"></div>
@@ -735,7 +88,7 @@
                 <!-- end of dropdown menu -->
                <!-- Dropdown Menu -->          
                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle page-scroll inactiveLink" href="/talent.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color: black;">TruLead for Talent</a>
+                <a class="nav-link dropdown-toggle page-scroll inactiveLink" href="/talent.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false"  style="color: black;">trulead for Talent</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="/talent.html" style="white-space: nowrap;" ><span class="item-text">Features</span></a>
                     <div class="dropdown-items-divide-hr"></div>
@@ -784,7 +137,7 @@
                     <a class="nav-link page-scroll" href="/about.html">ABOUT US</a>
                 </li> -->
                 <span class="nav-item">
-                    <a class="btn-outline-sm " href="/schedule.html" style="background: linear-gradient(to right, rgb(242,101,34) 33.33%, rgb(236, 0, 140) 66.66%, rgb(38,36,123) 100%); color: white;  padding: 1em; white-space: nowrap;   box-shadow: 5px 10px; margin-left: 2em;">Schedule a Demo</a>
+                    <a class="btn-outline-sm " href="/schedule.html" style="background: linear-gradient(to right, rgb(242,101,34) 33.33%, rgb(236, 0, 140) 66.66%, rgb(38,36,123) 100%); color: white;  padding: 1em; white-space: nowrap;   box-shadow: 5px 10px; margin-left: 1.5em;">Schedule a Demo</a>
                 </span>
             </ul>
            
@@ -794,98 +147,69 @@
 <!-- end of navigation -->
 
   
+
+
+
+
+
 <br>
 <br>
 <br>
 <br>
 <br>
+<br>
+
+
+
+
+<h2 class="text-muted" style="text-align: center;" >Blog</h2>
+<br>
 
 
 
 
 
 
-    <div class="container" style="margin-top: 20px;">
-        <div class="col-md-12 col-lg-12">
-            <article class="post vt-post">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4">
-                        <div class="post-type post-img">
-                            <a href="#"><img src="https://www.thedailydesigns.com/wp-content/uploads/2018/12/animated-video.png" class="img-responsive" alt="image post"></a>
-                        </div>
-                        <div class="author-info author-info-2">
-                            <ul class="list-inline">
-                                <li>
-                                    <div class="info">
-                                        <p>Posted on:</p>
-                                        <strong>Dec 21, 2021</strong></div>
-                                </li>
-                                <li>
-                                    <div class="info">
-                                        <p>Comments:</p>
-                                        <strong></strong></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-8">
-                        <div class="caption">
-                            <h3 class="md-heading"><a href="#">ACCEPTING…</a></h3>
-                            <p style="padding: 5px;">
-                                I was waiting for my delivery from an online grocer. But alas! Few of my fav items were
-missing! I was very angry.
-I vent my anger on the unsuspecting delivery boy.
-The watchman tried to help me with my bags. In my foul mood I hurled a few nasty
-comments at him, recalling an unrelated past incident.
-Sat quietly with a foul mood and unwilling for my office e-meetings. When I did join in I was
-a passive participant. Had plans to watch Big B’s new movie. Put that off too.
-1 by 1, unbeknownst to me, I was piling on micro-anxieties. Some outside my control. Others
-my own. The day was bad. I couldn’t even sleep over it.
-I started cursing life for handing me a raw deal. The lockdown. The economy. The pandemic.
-The universe was pushing me down a rabbit hole.
-Frustrated I turned on some music. Those zestful Kishorda numbers started playing. I wafted
-into a zone of peace.
-We slip into zones of anxieties. Mostly triggered by things outside our control.
-Micro-anxieties pile up one over other & form a chain. We all have different ways to break
-this chain. Some talk to friends. Others indulge in family activity
 
-Breaking this chain is vital. Earlier the better. Accepting the uncontrollable is perhaps a
-starting point.
-What say, some Kishorda melodies?
-(All views expressed here are the views of the essayist and does not represent the
-official standpoints of any organisation the essayist is associated with)
-                            </p>
-                            <!-- <a class="btn btn-default" href="#" role="button">Read More</a> </div> -->
-                    </div>
-                </div>
-            </article>
-            
-            
-            
-           
-            <div class="pagination-wrap">
-                <nav aria-label="Page navigation example">
-                  <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                  </ul>
-                </nav>
-            </div>
-            <div class="clearfix"></div>
-        </div>
+<div class="container">
+    <div class="card">
+      <div class="card__header">
+        <img src="assets/blog1.jpg" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-blue">Technology</span>
+        <h4>Accepting</h4>
+        <p>I was waiting for my delivery from an online grocer. But alas! Few.......</p>
+        <a href="/blog1.html">Read More</a>
+      </div>
+    
     </div>
-
-
-
-
-
-
-
-
-
+    <div class="card">
+      <div class="card__header">
+        <img src="assets/blog2.jpg" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-brown">Miscellaneous</span>
+        <h4>AN ABSTRACT INQUIRY</h4>
+        <p>Maybe these moments will come my way again....</p>
+        <a href="/blog2.html">Read More</a>
+      </div>
+    
+    </div>
+    <div class="card">
+      <div class="card__header">
+        <img src="assets/blog3.jpg" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-red">Company</span>
+        <h4>THE INTERN & THE CEO- ALIGNMENT</h4>
+        <p>Once an Intern told a CEO, our organization has lot of......</p>
+        <a href="/blog3.html">Read More</a>
+      </div>
+     
+    </div>
+  </div>
+  
 
 
 
@@ -918,9 +242,9 @@ official standpoints of any organisation the essayist is associated with)
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col first">
-                        <h4>About TruLead for Learning</h4>
+                        <h4>About trulead for Learning</h4>
                         <p class="p-small">
-                            Trulead suite for Learning is an IOB powered SaaS platform for improving Learning Effectiveness at individual level across the organization</p>
+                            trulead suite for Learning is an IOB powered SaaS platform for improving Learning Effectiveness at individual level across the organization</p>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
@@ -971,13 +295,12 @@ official standpoints of any organisation the essayist is associated with)
     </div> <!-- end of footer -->  
     <!-- end of footer -->
 
-
     <!-- Copyright -->
     <div class="copyright">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2022 <a href="#">TruLead</a></p>
+                    <p class="p-small">Copyright © 2022 <a href="#">trulead</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
