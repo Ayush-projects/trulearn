@@ -36,6 +36,24 @@
 	
 	<!-- Favicon  -->
     <link rel="icon" href="assets/small.png">
+    <!-- <style>
+         .button-fixed{
+      bottom: 0;
+      position: fixed;
+      right: 0;
+      border-radius: 4px;
+      }
+      .fas{
+      cursor: pointer;
+      font-size: 12px;
+      }
+      p{
+      font-size: 10px;
+      }
+      .bg-custom{
+      background-color:#130f40;
+      }
+    </style> -->
 </head>
 <body data-spy="scroll" data-target=".fixed-top" >
     
@@ -536,8 +554,34 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of slider-2 -->
-    
+    <!-- <div class="row">
+        <div class="col-md-4 col-sm-12 button-fixed">
+          <div class="p-3 pb-4 bg-custom text-white">
+            <div class="row">
+              <div class="col-10">
+                <h2>Allow Cookies</h2>
+              </div>
+              <div class="col-2 text-center">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button type="button" class="btn btn-danger w-100">Accept Cookies</button>
+          </div>
+        </div>
+      </div> -->
+<!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+<script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"light","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"trulead"});
+});
+</script>
 
+<noscript>Cookie Consent by <a href="https://www.freeprivacypolicy.com/" rel="nofollow noopener">Free Privacy Policy Generator website</a></noscript>
+<!-- End Cookie Consent -->
     <!-- Newsletter -->
     <div class="form">
         <div class="container" style="padding-top: 0px;">
@@ -706,5 +750,6 @@
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/cookie.js"></script>
 </body>
 </html>
