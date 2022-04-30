@@ -592,18 +592,18 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
                         <h2>Stay Updated With The Latest News About trulead</h2>
 
                         <!-- Newsletter Form -->
-                        <form id="newsletterForm" data-toggle="validator" data-focus="false">
+                        <form data-toggle="validator" data-focus="false" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXBNt8ynoDA-H8YUzd4ycghw7_9XDm2mBTHJ0PgY0Aq3Hb6g/formResponse" method="post" onsubmit="ayush(event)">
                             <div class="form-group">
-                                <input type="email" class="form-control-input" id="nemail" placeholder="Enter your email" required style="padding: 5px">
+                                <input type="email" class="form-control-input" id="nemail" placeholder="Enter your email" required style="padding: 5px" name="entry.699262406">
                               
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group checkbox">
-                                <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>I've read and agree to trulead's written <a href="#">Privacy Policy</a> and <a href="#">Terms Conditions</a> 
+                                <input type="checkbox" id="nterms" value="Agreed-to-Terms" required>I've read and agree to trulead's written <a href="/terms.html">Terms Conditions.</a> 
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button">SUBSCRIBE</button>
+                                <button type="submit" class="form-control-submit-button" id="newsletter">SUBSCRIBE</button>
                             </div>
                             <div class="form-message">
                                 <div id="nmsgSubmit" class="h3 text-center hidden"></div>
@@ -739,7 +739,38 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
     </div> <!-- end of copyright --> 
     </div>
     <!-- end of copyright -->
-    
+    <script>
+        // function ayush(e)
+        // {
+         
+        //     window.location.href="/thank-you.html"
+        //     console.log("Ayush")
+        // }
+        // $(function() {
+    // $('form').submit(function() {
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXBNt8ynoDA-H8YUzd4ycghw7_9XDm2mBTHJ0PgY0Aq3Hb6g/formResponse',
+    //         data: { entry.699262406: $(this).name.value, 
+    //                 }
+    //     });
+    //     return false;
+    // }); 
+
+
+//     $('form').submit(function(e) {
+//    e.preventDefault();
+//    $.ajax({
+//         type: 'POST',
+//         url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXBNt8ynoDA-H8YUzd4ycghw7_9XDm2mBTHJ0PgY0Aq3Hb6g/formResponse',
+//         data: $(this).serialize(),
+       
+//         success: ayush
+//    });
+
+// })
+// })
+    </script>
     	
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
@@ -750,6 +781,6 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
-    <script src="js/cookie.js"></script>
+ 
 </body>
 </html>
