@@ -173,7 +173,7 @@
                         <div class="text-container">
                             <h1 id="k1">trulead for Learning</h1>
                             <p class="p-large" id="k2">Is your one stop solution for achieving Learning Effectiveness and real ROI on all your learning interventions</p>
-                            <a class="btn-solid-lg page-scroll " href="#" >Request Demo</a>
+                            <a class="btn-solid-lg page-scroll " href="/schedule.html" >Request Demo</a>
                             <strong class="bold-text" aria-hidden="true" style="color: white; font-size: 1em" id="lol">27% ↑ Learning Effectiveness</strong>
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
@@ -592,9 +592,9 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
                         <h2>Stay Updated With The Latest News About trulead</h2>
 
                         <!-- Newsletter Form -->
-                        <form data-toggle="validator" data-focus="false" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXBNt8ynoDA-H8YUzd4ycghw7_9XDm2mBTHJ0PgY0Aq3Hb6g/formResponse" method="post" onsubmit="ayush(event)">
-                            <div class="form-group">
-                                <input type="email" class="form-control-input" id="nemail" placeholder="Enter your email" required style="padding: 5px" name="entry.699262406">
+                        <form data-toggle="validator" data-focus="false" >
+                            <div class="form-group" id="newsletter">
+                                <input type="email" class="form-control-input" id="nemail" placeholder="Enter your email" required style="padding: 5px" name="entry.699262406" >
                               
                                 <div class="help-block with-errors"></div>
                             </div>
@@ -603,7 +603,7 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
                                 <div class="help-block with-errors"></div>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control-submit-button" id="newsletter">SUBSCRIBE</button>
+                                <button  class="form-control-submit-button"  onclick="ayush()">SUBSCRIBE</button>
                             </div>
                             <div class="form-message">
                                 <div id="nmsgSubmit" class="h3 text-center hidden"></div>
@@ -614,6 +614,29 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
+
+            <script>
+
+  function ayush()
+  {   
+             let formData = new FormData();
+                let email = document.getElementById("nemail").value;
+              
+                formData.append('entry.699262406', email);
+                console.log(email)
+                fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXBNt8ynoDA-H8YUzd4ycghw7_9XDm2mBTHJ0PgY0Aq3Hb6g/formResponse",
+                    {
+                        body: formData,
+                        method: "POST"
+                    }).then((res)=>{
+                        console.log(res)
+                            window.location.href="/thank-you.html"  
+                    })
+  }
+                // Build formData object.
+              
+                
+                    </script>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="icon-container">
@@ -696,6 +719,11 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
                                 <i class="fas fa-square"></i>
                                 <div class="media-body"><a class="white" href="/faq.html" style="text-decoration: none;">FAQ's  </a></div>
                             </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body"><a class="white" href="/privacy.html" style="text-decoration: none;">Privacy Policy</a></div>
+                            </li>
+                        
                           
                         </ul>
                     </div>
@@ -739,38 +767,7 @@ cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express",
     </div> <!-- end of copyright --> 
     </div>
     <!-- end of copyright -->
-    <script>
-        // function ayush(e)
-        // {
-         
-        //     window.location.href="/thank-you.html"
-        //     console.log("Ayush")
-        // }
-        // $(function() {
-    // $('form').submit(function() {
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXBNt8ynoDA-H8YUzd4ycghw7_9XDm2mBTHJ0PgY0Aq3Hb6g/formResponse',
-    //         data: { entry.699262406: $(this).name.value, 
-    //                 }
-    //     });
-    //     return false;
-    // }); 
 
-
-//     $('form').submit(function(e) {
-//    e.preventDefault();
-//    $.ajax({
-//         type: 'POST',
-//         url: 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdXBNt8ynoDA-H8YUzd4ycghw7_9XDm2mBTHJ0PgY0Aq3Hb6g/formResponse',
-//         data: $(this).serialize(),
-       
-//         success: ayush
-//    });
-
-// })
-// })
-    </script>
     	
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
