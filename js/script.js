@@ -7,7 +7,7 @@ setInterval(()=>{
         document.getElementById("k2").innerHTML = "Is your one stop solution for all your Talent Management needs <br> <br>"
         document.getElementById("lol").innerHTML = "35% ↑ Talent Decision Making Speed"
         document.getElementById("k3").src = "assets/lol.jpeg"
-        document.getElementById("lol").style.fontSize = "0.81em"
+        document.getElementById("lol").style.fontSize = "0.79em"
 
     }
     else
