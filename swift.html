@@ -206,9 +206,12 @@
                     <div class="col-lg-6 col-xl-5">
                         <div class="text-container">
                             <h1 id="k1">dayONE<br>Swift</h1>
-                            <p class="p-large" id="k2">Architect a best-in-class new joinee onboarding process.</p>
+                            <p class="p-large" style="font-size: 1em;">Architect a best-in-class new joinee onboarding process.</p>
+                            <p class="p-large" style="font-size: 1em;">Automate all steps of your onboarding process from pre-onboarding to a new role
+                                transition. DAYONE, is all you need to build a world class onboarding experience at
+                                minimum cost per joinee.</p>
                             <a class="btn-solid-lg page-scroll " href="/schedule.html" >Request Demo</a>
-                            <strong class="bold-text" aria-hidden="true" style="color: white; font-size: 1em" id="lol">27% ↑ Learning Effectiveness</strong>
+                            <strong class="bold-text" aria-hidden="true" style="color: white; font-size: 1em" id="test1">27% ↑ Learning Effectiveness</strong>
                         </div> <!-- end of text-container -->
                     </div> <!-- end of col -->
                     <div class="col-lg-6 col-xl-7" >
@@ -327,7 +330,9 @@
             <div class="row" >
                 <div class="col-lg-12" >
                     <!-- <div class="above-heading" >DESCRIPTION</div> -->
-                    <h2 class="h2-heading text-muted"  >trulead suite for Learning is an IOB powered SaaS platform for improving Learning Effectiveness at individual level across the organization</h2>
+                    <h2 class="h2-heading text-muted"  >Almost everyday organisations hire new people or have people move into new roles or projects.
+                        Managers, HR and the individual are perpetually facing the same pain point. How to shape/ display
+                        desired behaviours?? <br> <br><br>DayOne is a <b>behavior</b> based digital onboarding and Induction platform for new hires.</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -339,9 +344,9 @@
                             <img class="img-fluid" src="assets/add1.png" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Learning in the Flow of Work</h4>
-                            <p>Makes learning continuous and not event based 
-                            </p>
+                            <h4 class="card-title">Built in paperwork management</h4>
+                            <!-- <p>Makes learning continuous and not event based 
+                            </p> -->
                         </div>
                     </div>
                     <!-- end of card -->
@@ -352,8 +357,8 @@
                             <img class="img-fluid" src="assets/add2.png" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Socially engage cohorts</h4>
-                            <p>Leverages formal and informal group dynamics to boost learning effectiveness </p>
+                            <h4 class="card-title">Orientation workflow management</h4>
+                            <!-- <p>Leverages formal and informal group dynamics to boost learning effectiveness </p> -->
                         </div>
                     </div>
                     <!-- end of card -->
@@ -364,8 +369,8 @@
                             <img class="img-fluid" src="assets/add3.png" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Application of learning back at work</h4>
-                            <p>Makes application of learning a continuous day to day process</p>
+                            <h4 class="card-title">Easy connect with your L&D suite</h4>
+                            <!-- <p>Makes application of learning a continuous day to day process</p> -->
                         </div>
                     </div>
 
@@ -374,8 +379,8 @@
                             <img class="img-fluid" src="assets/add4.png" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Personalised Learning interventions</h4>
-                            <p>Focussed effort at Individual level resulting in better learning ROI </p>
+                            <h4 class="card-title">Easy immersion of new joinees to final job role</h4>
+                            <!-- <p>Focussed effort at Individual level resulting in better learning ROI </p> -->
                         </div>
                     </div>
                     <div class="card">
@@ -383,8 +388,8 @@
                             <img class="img-fluid" src="assets/add5.png" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Integrate with Talent Processes</h4>
-                            <p>Digital tool for 9 Box – Potential and Performance analytics for various talent applications at scale and with speed</p>
+                            <h4 class="card-title">Self Service Portal for Joinees</h4>
+                            <!-- <p>Digital tool for 9 Box – Potential and Performance analytics for various talent applications at scale and with speed</p> -->
                         </div>
                     </div>
                     <!-- end of card -->
@@ -1238,5 +1243,16 @@
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script>
+        let div = document.getElementById("test1")
+        var values = ["80% ↑ effort reduction", "75% ↑ more social connect", "130% ↑ effective learning", "50% ↑ lesser time"]
+        let i = 0
+        setInterval(function(
+            
+        ){
+            div.innerHTML = values[(i++)%values.length]
+        }, 2000)
+
+    </script>
 </body>
 </html>
