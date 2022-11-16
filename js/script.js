@@ -1,7 +1,7 @@
 let flag = true;
 setInterval(()=>{
     if(document.getElementById("k1"))
-    if(document.getElementById("k1").innerHTML == "trulead for Learning")
+    if(document.getElementById("k1").innerHTML == "dayONE<br>Upskill")
     {
         document.getElementById("k1").innerHTML = "trulead for Talent"
         document.getElementById("k2").innerHTML = "Is your one stop solution for all your Talent Management needs <br> <br>"
@@ -12,7 +12,7 @@ setInterval(()=>{
     }
     else
     {
-        document.getElementById("k1").innerHTML = "trulead for Learning"
+        document.getElementById("k1").innerHTML = "dayOne<br>Upskill"
         document.getElementById("k2").innerHTML = "Is your one stop solution for achieving Learning Effectiveness and real ROI on all your learning interventions"
         document.getElementById("lol").innerHTML = "27% ↑ Learning Effectiveness"
         document.getElementById("k3").src = "assets/image1.png"
